@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="HelloWorldVSIX.HelloWorldIntellisensePresenterControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:HelloWorldVSIX"
+             Width="260"
+             Height="130">
+    <Grid Background="LightGray">
+        <StackPanel Orientation="Horizontal"                   
+                    HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   Margin="0,10">
+            <TextBlock Text="First Completion: "
+                       VerticalAlignment="Bottom"/>
+            <TextBlock x:Name="FirstCompletionText"
+                       VerticalAlignment="Center"
+                        FontSize="14"
+                        FontWeight="Bold"/>
+        </StackPanel>
+
+        <Button x:Name="CommitButton"
+                Content="Commit"
+                Width="70"
+                Height="30"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Margin="20,10"/>
+
+        <Button x:Name="DismissButton"
+                Content="Dismiss"
+                Width="70"
+                Height="30"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Margin="20,10"/>
+    </Grid>
+</UserControl>
